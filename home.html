@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Floraku | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="cekLogin()">
+
+<h1 class="big-text">Pretty like flower 🌸🌷🌹</h1>
+
+<div class="upload-card">
+  <h3>Upload Floramu 🌼</h3>
+
+  <input type="file" id="foto" accept="image/*">
+
+  <button onclick="ambilLokasi()">Ambil Lokasi Otomatis 📍</button>
+  <p id="lokasiText"></p>
+
+  <textarea id="caption" placeholder="Keterangan foto..."></textarea>
+
+  <button onclick="uploadFoto()">Upload</button>
+</div>
+
+<div id="galeri" class="galeri"></div>
+
+<!-- Overlay -->
+<div id="overlay" class="overlay hidden">
+  <div class="overlay-content">
+    <h2>🌸 Jangan capek berbagi ilmu ya 🌸</h2>
+    <button onclick="tutupOverlay()">Lanjutkan</button>
+  </div>
+</div>
+
+<a href="logout.html" class="logout-btn">Logout</a>
+
+<script src="script.js"></script>
+</body>
+</html>
