@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.pink-bg {
+  background: linear-gradient(135deg, #ff9ecf, #ffd6e8);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  width: 340px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.judul {
+  font-family: 'Pacifico', cursive;
+  color: #ff5fa2;
+}
+
+.sapaan {
+  font-size: 14px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+  border-radius: 8px;
+  border: 1px solid #ffc0da;
+}
+
+button {
+  background: #ff5fa2;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff3c8f;
+}
+
+.big-text {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  color: #ff4f9a;
+  margin-top: 20px;
+}
+
+.upload-card {
+  background: #fff0f7;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.galeri {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 150px);
+  gap: 15px;
+  padding: 20px;
+}
+
+.galeri img {
+  width: 150px;
+  border-radius: 12px;
+}
+
+.logout-btn {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(255,192,218,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.overlay-content {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* Animasi bunga jatuh */
+.flower {
+  position: fixed;
+  top: -50px;
+  font-size: 24px;
+  animation: fall linear forwards;
+  pointer-events: none;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100px) translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
